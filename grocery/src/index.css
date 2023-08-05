@@ -1,0 +1,91 @@
+
+main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.alert {
+  position: absolute;
+  top: 3rem; 
+}
+
+#alert {
+  font-size: 1rem; 
+}
+
+section {
+  margin-top: 7rem;
+  width: 60%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  border: 3px solid black; 
+}
+
+.addBtn {
+  background-color: blue;
+  color: white;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.noOfItems {
+  display: inline-block;
+  width: 2rem;
+}
+
+.inc, .dec{
+  border-radius: 100px;
+  width: 2rem;
+  height: 2rem;
+  font-weight: 700;
+}
+
+img {
+  height: 1rem;
+  width: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.clearItems {
+  border: 2px solid red;
+  color: red;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: "Trebuchet MS";
+  font-size: 1rem;
+}
+
+::selection {
+  background-color: green;
+  color: yellow;
+}
+
+@media screen and (max-width: 480px) {
+	section {
+		width: 80%;
+    margin-top: 5rem;
+	}
+
+  .alert {
+    top: 1rem;
+  }
+}
